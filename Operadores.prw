@@ -1,7 +1,7 @@
 #INCLUDE "Protheus.ch"
 
 /*/(Protheus.doc) Operadores da Linguagem
-Função : Analista de Sistemas
+FunÃ§Ã£o : Analista de Sistemas
 @author Kassio B.
 Since 21/12/2023
 @version 12 superior
@@ -22,23 +22,23 @@ User Function Operadores()
     Local aNomes        := {"Kassio", "Batista", "Souza"}
 
 
-    // Matemáticos
+    // MatemÃ¡ticos
     nResp   := nNum1 + nNum2 //Soma
-    nResp   := nNum1 - nNum2 //Subtração
-    nResp   := nNum1 / nNum2 //Divisão
-    nResp   := nNum1 * nNum2 //Multiplicação
-    nResp   := nNum1 ^ nNum2 //Exponenciação (** também serve)
-    nResp   := nNum1 % nNum2 //Resto da divisão
+    nResp   := nNum1 - nNum2 //SubtraÃ§Ã£o
+    nResp   := nNum1 / nNum2 //DivisÃ£o
+    nResp   := nNum1 * nNum2 //MultiplicaÃ§Ã£o
+    nResp   := nNum1 ^ nNum2 //ExponenciaÃ§Ã£o (** tambÃ©m serve)
+    nResp   := nNum1 % nNum2 //Resto da divisÃ£o
 
     // Operadores de String
-    cResposta       := "Kássio " + "Dev" //Concatenar
-    cResposta       := "Kássio " - " Dev" //Concatenação de sting com eliminação dos brancos finais nas strings intermediárias
+    cResposta       := "KÃ¡ssio " + "Dev" //Concatenar
+    cResposta       := "KÃ¡ssio " - " Dev" //ConcatenaÃ§Ã£o de sting com eliminaÃ§Ã£o dos brancos finais nas strings intermediÃ¡rias
 
-    cTexto1         := "Kássio"
-    cTexto2         := "Kássio,Batista,Souza" 
-    lResposta       := cTexto1 $ cTexto2 //Comparação de Strings (está contido)
+    cTexto1         := "KÃ¡ssio"
+    cTexto2         := "KÃ¡ssio,Batista,Souza" 
+    lResposta       := cTexto1 $ cTexto2 //ComparaÃ§Ã£o de Strings (estÃ¡ contido)
 
-    // Operadores de comparação
+    // Operadores de comparaÃ§Ã£o
     lResposta   := nNum1 > nNum2 //Maior
     lResposta   := nNum1 < nNum2 //Menor
     lResposta   := nNum1 == nNum2 //Igualdade
@@ -46,49 +46,49 @@ User Function Operadores()
     lResposta   := nNum1 <= nNum2 //Menor ou igual
 
     lResposta   := cTexto1 == cTexto2 //Exatamente igual (comparar strings)
-    lResposta   := cTexto1 = cTexto2 // Nesse caso, igual dá verdadeiro
-    lResposta   := cTexto1 != cTexto2 // Isso dá falso (está errado)
-    lResposta   := !(cTexto1 != cTexto2) //Dá verdadeiro, pois o ! no inicio força a mudança de valor lógico
+    lResposta   := cTexto1 = cTexto2 // 
+    lResposta   := cTexto1 != cTexto2 // 
+    lResposta   := !(cTexto1 != cTexto2) //O ! no inicio forÃ§a a mudanÃ§a de valor lÃ³gico
 
-    // Operadores de Atribuição
-    // Atribuição simples
+    // Operadores de AtribuiÃ§Ã£o
+    // AtribuiÃ§Ã£o simples
     nNum1 = 2
 
-    // Atribuição em linha
+    // AtribuiÃ§Ã£o em linha
     nNum2 := nNum1 := 5
     nNum1 := 5
     nNum2 := 5
     cTexto1 := "Kassio"
 
-    // Adição e atribuição em linha
+    // AdiÃ§Ã£o e atribuiÃ§Ã£o em linha
     nNum1 += nNum2
 
-    // Subtração e atribuição em linha
+    // SubtraÃ§Ã£o e atribuiÃ§Ã£o em linha
     nNum1 -= nNum2
 
-    // Multiplicação e atribuição em linha
+    // MultiplicaÃ§Ã£o e atribuiÃ§Ã£o em linha
     nNum1 *= nNum2
 
-    // Divisão e atribuição em linha
+    // DivisÃ£o e atribuiÃ§Ã£o em linha
     nNum1 /= nNum2
 
     // Operadores de incremento
-    // ++ Incremento pós ou pré fixado
+    // ++ Incremento pÃ³s ou prÃ© fixado
     nNum1 ++
     nNum1 ++
 
-    // -- Decremento pós ou pré fixado
+    // -- Decremento pÃ³s ou prÃ© fixado
     nNum1 --
     nNum1 --
 
-    // () Agrupamento ou função
+    // () Agrupamento ou funÃ§Ã£o
     // TKassio ()
-    nResp ((nNum1 - nNum2) / nNum3) * nNum4
+    nResp := ((nNum1 - nNum2)/ nNum3) * nNum4
     
     // [] Elementos de matriz
     cResposta   := aNomes[1]
 
-    // Definição de matriz constante ou bloco de codigo
+    // {} DefiniÃ§Ã£o de matriz constante ou bloco de codigo
     aNomes  := {"K", "A", "S"}
 
     // -> Identificador de apelido
@@ -96,11 +96,11 @@ User Function Operadores()
     //cAliasTop := SA1
     //(cAliasTop)-> A1_COD
 
-    // & Macrosubstituição
+    // & MacrosubstituiÃ§Ã£o
     cTexto1 := "7 + 7"
     nResp   := &cTexto1
 
     // @ Passagem de parametro por referencia
     U_Kassio(@nNum1)
-    
+
 Return
